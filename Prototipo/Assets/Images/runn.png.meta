@@ -1,0 +1,169 @@
+fileFormatVersion: 2
+guid: 3f71e7a05ddfd294ba36f5113bc9d6e2
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: runn
+    21300002: runn_0
+    21300004: runn_1
+    21300006: runn_2
+    21300008: runn_3
+    21300010: runn_4
+    21300012: runn_5
+    21300014: runn_6
+    21300016: runn_7
+    21300018: runn_8
+    21300020: runn_9
+    21300022: runn_10
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 2
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 25
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: runn_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 443
+        width: 44
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: runn_1
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 439
+        width: 43
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: runn_2
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 436
+        width: 43
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: runn_3
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 437
+        width: 38
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: runn_4
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 443
+        width: 43
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: runn_5
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 439
+        width: 43
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: runn_6
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 438
+        width: 39
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: runn_7
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 438
+        width: 35
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: runn_8
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 370
+        width: 35
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: runn_9
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 371
+        width: 35
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: runn_10
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 370
+        width: 35
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
