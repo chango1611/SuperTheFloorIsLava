@@ -47,14 +47,13 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\AnimationManager.cs" />
-     <Compile Include="Assets\Scripts\ChangeWorldManager.cs" />
      <Compile Include="Assets\Scripts\ImageCrossDisolving.cs" />
      <Compile Include="Assets\Scripts\ImaginaryPortal.cs" />
      <Compile Include="Assets\Scripts\ImaginaryPortal2.cs" />
+     <Compile Include="Assets\Scripts\MorphObjectManager.cs" />
      <Compile Include="Assets\Scripts\ObjectManager.cs" />
-     <Compile Include="Assets\Scripts\ObjectManager2.cs" />
+     <Compile Include="Assets\Scripts\PlayerManager.cs" />
      <Compile Include="Assets\Scripts\PlayerVer1.cs" />
-     <Compile Include="Assets\Scripts\PlayerVer2.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

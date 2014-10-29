@@ -1,10 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ImaginaryPortal2.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerManager.cs">
     <Files>
-      <File FileName="Assets\Scripts\ChangeWorldManager.cs" Line="20" Column="18" />
-      <File FileName="Assets\Scripts\ImaginaryPortal2.cs" Line="37" Column="2" />
-      <File FileName="Assets\Scripts\ImaginaryPortal.cs" Line="17" Column="3" />
+      <File FileName="Assets\Scripts\MorphObjectManager.cs" Line="7" Column="34" />
+      <File FileName="Assets\Scripts\ImaginaryPortal.cs" Line="23" Column="4" />
+      <File FileName="Assets\Scripts\PlayerManager.cs" Line="29" Column="31" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

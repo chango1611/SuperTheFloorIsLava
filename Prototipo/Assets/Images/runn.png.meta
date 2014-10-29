@@ -1,19 +1,6 @@
 fileFormatVersion: 2
 guid: 3f71e7a05ddfd294ba36f5113bc9d6e2
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: runn
-    21300002: runn_0
-    21300004: runn_1
-    21300006: runn_2
-    21300008: runn_3
-    21300010: runn_4
-    21300012: runn_5
-    21300014: runn_6
-    21300016: runn_7
-    21300018: runn_8
-    21300020: runn_9
-    21300022: runn_10
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -49,7 +36,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 25
+  spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []

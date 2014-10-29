@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
+  - 60: {fileID: 6000002}
   m_Layer: 0
   m_Name: imaginaryObject
   m_TagString: Untagged
@@ -27,6 +28,7 @@ GameObject:
   - 212: {fileID: 21200002}
   - 95: {fileID: 9500000}
   - 114: {fileID: 11400000}
+  - 60: {fileID: 6000000}
   m_Layer: 0
   m_Name: realObject
   m_TagString: Untagged
@@ -59,6 +61,53 @@ Transform:
   - {fileID: 400000}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!60 &6000000
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Poly:
+    m_Paths:
+    - - {x: .25999999, y: .119999997}
+      - {x: .300000012, y: .310000002}
+      - {x: .289999992, y: .319999993}
+      - {x: -.289999992, y: .319999993}
+      - {x: -.310000002, y: .319999993}
+      - {x: -.270000011, y: .209999993}
+      - {x: -.319999993, y: .100000001}
+      - {x: -.319999993, y: -.230000004}
+      - {x: -.219999999, y: -.319999993}
+      - {x: .150000006, y: -.319999993}
+      - {x: .209999993, y: -.25}
+      - {x: .319999993, y: -.109999999}
+      - {x: .319999993, y: .0599999987}
+--- !u!60 &6000002
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Poly:
+    m_Paths:
+    - - {x: .180000007, y: .180000007}
+      - {x: .180000007, y: .140000001}
+      - {x: .180000007, y: .239999995}
+      - {x: .100000001, y: .319999993}
+      - {x: -.189999998, y: .319999993}
+      - {x: -.319999993, y: .25999999}
+      - {x: -.319999993, y: -.25999999}
+      - {x: -.289999992, y: -.319999993}
+      - {x: .239999995, y: -.319999993}
+      - {x: .319999993, y: -.200000003}
+      - {x: .319999993, y: .159999996}
+      - {x: .180000007, y: .230000004}
 --- !u!95 &9500000
 Animator:
   serializedVersion: 3
@@ -81,11 +130,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 100002}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d370dda5cb6c7c41829262dfba5d6a2, type: 3}
+  m_Script: {fileID: 11500000, guid: 27ecb6a327fbe2e4c8fc8d06fb64c4a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeWorldAnim: {fileID: 0}
-  pong: 0
+  morphObjectAnim: {fileID: 9500000}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

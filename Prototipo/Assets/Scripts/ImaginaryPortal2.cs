@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ImaginaryPortal2 : MonoBehaviour {
 
-	public ChangeWorldManager[] morphs;
+	public ImageCrossDisolving[] morphs;
 	public float imaginationBar;
 	public float upSpeed, downSpeed;
 	
@@ -18,8 +18,8 @@ public class ImaginaryPortal2 : MonoBehaviour {
 		if(imaginationBar>1) imaginationBar= 1;
 		if(imaginationBar<0) imaginationBar= 0;
 		
-		foreach(ChangeWorldManager morph in morphs){
-			morph.NewMorphFrame(imaginationBar);
+		foreach(ImageCrossDisolving morph in morphs){
+			morph.NewMorphFrame(Mathf.RoundToInt(imaginationBar*(morph.numberOfFrames-1)));
 		}
 	}
 	
