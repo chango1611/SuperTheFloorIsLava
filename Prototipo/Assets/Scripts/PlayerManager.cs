@@ -7,12 +7,13 @@ public class PlayerManager : MonoBehaviour {
 
 	private bool inAir= false;
 	private Animator animator;
-	private float max_distance;
+	private float y_offset, x_offset;
 
 	void Start () {
 		animator = GetComponent<Animator>() as Animator;
 		SpriteRenderer aux= GetComponent<SpriteRenderer>() as SpriteRenderer;
-		max_distance= transform.localScale.y * aux.sprite.rect.height/200 + 0.1f;
+		y_offset= transform.localScale.y * aux.sprite.rect.height/200 + 0.1f;
+		x_offset= transform.localScale.x * aux.sprite.rect.width/200 * 0.2f;
 	}
 	
 	// Update is called once per frame
@@ -22,12 +23,14 @@ public class PlayerManager : MonoBehaviour {
 		
 		if(jump>0 && !inAir){
 			rigidbody2D.AddForce(Vector2.up * jump * jumpForce);
-			inAir= true;
 		}
 		
-		RaycastHit2D hit = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - max_distance), -Vector2.up, 0.05f);
-		if(hit.collider != null && !hit.collider.isTrigger){
+		RaycastHit2D hit = Physics2D.Raycast(new Vector2(transform.position.x + x_offset, transform.position.y - y_offset), -Vector2.up, 0.01f);
+		RaycastHit2D hit2 = Physics2D.Raycast(new Vector2(transform.position.x - x_offset, transform.position.y - y_offset), -Vector2.up, 0.01f);
+		if((hit.collider != null && !hit.collider.isTrigger) || (hit2.collider !=null && !hit2.collider.isTrigger)){
 			inAir= false;
+		}else{
+			inAir= true;
 		}
 		
 		if(desp<0) {
