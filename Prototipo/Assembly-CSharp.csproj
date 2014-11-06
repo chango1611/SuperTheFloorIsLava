@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\AnimationManager.cs" />
+     <Compile Include="Assets\Scripts\GUIKeyDemo.cs" />
      <Compile Include="Assets\Scripts\ImageCrossDisolving.cs" />
      <Compile Include="Assets\Scripts\ImaginaryPortal.cs" />
      <Compile Include="Assets\Scripts\ImaginaryPortal2.cs" />

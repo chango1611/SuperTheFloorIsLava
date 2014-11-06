@@ -8,6 +8,12 @@ public class PlayerManager : MonoBehaviour {
 	private bool inAir= false;
 	private Animator animator;
 	private float y_offset, x_offset;
+	
+	//Esto deberia ir en un Game Manager
+	public AudioListener listener;
+	private Rect PauseMenu = new Rect(Screen.width*0.5f-100.0f, Screen.height*0.5f-60.0f, 200, 120);
+	private bool inPause= false;
+	private bool mute= false;
 
 	void Start () {
 		animator = GetComponent<Animator>() as Animator;
@@ -47,4 +53,39 @@ public class PlayerManager : MonoBehaviour {
 		}			
 		
 	}
+	
+	//Esto debe ir en el GameManager
+	//Desde aqui-------------------------------------------------------------->
+	void Update(){
+		if(Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.Escape)){
+			inPause= !inPause;
+			Time.timeScale= 1 - Time.timeScale;
+		}
+	}
+	
+	void OnGUI(){
+		if(inPause)
+			GUI.Window(0, PauseMenu, ThePauseMenu, "Pause Menu");
+	}
+	
+	void ThePauseMenu(int e){
+		if(GUILayout.Button("Continue")){
+			inPause= false;
+			Time.timeScale = 1;
+		}
+		if(GUILayout.Button("Restart")){
+			Time.timeScale = 1;
+			Application.LoadLevel(Application.loadedLevel);
+		}
+		if(GUILayout.Button(mute?"Unmute":"Mute")){
+			mute= !mute;
+			listener.enabled= !mute;
+		}
+		
+		if(GUILayout.Button("Quit")){
+			Time.timeScale = 1;
+			Application.Quit();
+		}
+	}
+	//<-------------------------------------------------------------Hasta aqui
 }
